@@ -1,0 +1,30 @@
+{ 
+  "name": "Quick HTML", 
+  "version": "1.0",
+  "manifest_version":2,
+  "description": "Show or edit the html codes you selected in a new tab.",
+  "permissions": ["contextMenus"],
+  "icons": {
+  "16": "icon16.png",
+	"48": "icon48.png"
+  },
+  "options_page":"options.html",
+  "background": {
+    "scripts": ["main.js"]
+  },
+  "commands":{
+    "newsilen-qh-show":{
+      "suggested_key":{
+        "default":"Ctrl+Shift+G",
+        "windows":"Ctrl+Shift+G"
+      },
+      "description":"Show the html code you selected."
+    },"newsilen-qh-edit":{
+      "suggested_key":{
+        "default":"Ctrl+Shift+E",
+        "windows":"Ctrl+Shift+E"
+      },
+      "description":"Edit the html code you selected."
+    }
+  }
+}
